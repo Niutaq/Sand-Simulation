@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Symulowane Piksele: Plik źródłowy Piksele_Symulowane/files/operations.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Symulowane Piksele<span id="projectnumber">&#160;0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4f94aae095b9e47dba934ab906db1a0a.html">Piksele_Symulowane</a></li><li class="navelem"><a class="el" href="dir_8e4668ee50683bcbda5d02ac01962db6.html">files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">operations.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="operations_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="stuff_8hpp.html">stuff.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_op.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="class_op.html">Op</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_function" href="class_op.html#a3eebdf4de2e4ce3fa006e64ec7c8c1c0">Op</a>();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_op.html#ac7f1d3161efaa13cf6d4f6aab0339f05">Input</a>(std::vector&lt;std::vector&lt;int&gt;&gt;&amp; grid, sf::RenderWindow&amp; window);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_op.html#ab26ff4fdb83af1350ebb98a4e02b64ec">UpdateGrid</a>(std::vector&lt;std::vector&lt;int&gt;&gt;&amp; grid, <span class="keywordtype">int</span> worldHeight, <span class="keywordtype">int</span> worldWidth);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_op.html#a2cddb4b2e7b955bea6ccc566db430428">Draw</a>(std::vector&lt;std::vector&lt;int&gt;&gt;&amp; grid, sf::RenderWindow&amp; window);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">// Funkcja tworząca proceduralny teren bazująca na &quot;Perlin Noise&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_op.html#a912ad4c50668195361402f9cd79363b4">GenTerrain</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_op.html#ad924d548532f30aef735c0845634f7ad">   21</a></span>    sf::Color <a class="code hl_function" href="class_op.html#ad924d548532f30aef735c0845634f7ad">getRandomShadeAlpha</a>(sf::Color baseColor);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    sf::Color <a class="code hl_function" href="class_op.html#abea6f501eff7baf3ef7791de66995314">getRandomShade</a>(sf::Color baseColor);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    sf::Color <a class="code hl_function" href="class_op.html#a4bcdca2ddf55ca716b132a55ce786ae5">ColorPallette</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="ttc" id="aclass_op_html"><div class="ttname"><a href="class_op.html">Op</a></div><div class="ttdef"><b>Definition</b> <a href="operations_8hpp_source.html#l00004">operations.hpp:4</a></div></div>
+<div class="ttc" id="aclass_op_html_a2cddb4b2e7b955bea6ccc566db430428"><div class="ttname"><a href="class_op.html#a2cddb4b2e7b955bea6ccc566db430428">Op::Draw</a></div><div class="ttdeci">void Draw(std::vector&lt; std::vector&lt; int &gt; &gt; &amp;grid, sf::RenderWindow &amp;window)</div><div class="ttdoc">Funkcja do rysowania siatki (grid) na oknie (window).</div><div class="ttdef"><b>Definition</b> <a href="operations_8cpp_source.html#l00187">operations.cpp:187</a></div></div>
+<div class="ttc" id="aclass_op_html_a3eebdf4de2e4ce3fa006e64ec7c8c1c0"><div class="ttname"><a href="class_op.html#a3eebdf4de2e4ce3fa006e64ec7c8c1c0">Op::Op</a></div><div class="ttdeci">Op()</div><div class="ttdoc">Konstruktor klasy 'Op'.</div><div class="ttdef"><b>Definition</b> <a href="operations_8cpp_source.html#l00016">operations.cpp:16</a></div></div>
+<div class="ttc" id="aclass_op_html_a4bcdca2ddf55ca716b132a55ce786ae5"><div class="ttname"><a href="class_op.html#a4bcdca2ddf55ca716b132a55ce786ae5">Op::ColorPallette</a></div><div class="ttdeci">sf::Color ColorPallette()</div><div class="ttdoc">Paleta kolorów.</div><div class="ttdef"><b>Definition</b> <a href="operations_8cpp_source.html#l00180">operations.cpp:180</a></div></div>
+<div class="ttc" id="aclass_op_html_a912ad4c50668195361402f9cd79363b4"><div class="ttname"><a href="class_op.html#a912ad4c50668195361402f9cd79363b4">Op::GenTerrain</a></div><div class="ttdeci">float GenTerrain(float x, float y)</div><div class="ttdoc">Funkcja tworząca proceduralny teren (losowo)</div><div class="ttdef"><b>Definition</b> <a href="operations_8cpp_source.html#l00280">operations.cpp:280</a></div></div>
+<div class="ttc" id="aclass_op_html_ab26ff4fdb83af1350ebb98a4e02b64ec"><div class="ttname"><a href="class_op.html#ab26ff4fdb83af1350ebb98a4e02b64ec">Op::UpdateGrid</a></div><div class="ttdeci">void UpdateGrid(std::vector&lt; std::vector&lt; int &gt; &gt; &amp;grid, int worldHeight, int worldWidth)</div><div class="ttdoc">Funkcja do aktualizowania siatki (grid) w zależności od wysokości (worldheight) i szerokości (worldwi...</div><div class="ttdef"><b>Definition</b> <a href="operations_8cpp_source.html#l00114">operations.cpp:114</a></div></div>
+<div class="ttc" id="aclass_op_html_abea6f501eff7baf3ef7791de66995314"><div class="ttname"><a href="class_op.html#abea6f501eff7baf3ef7791de66995314">Op::getRandomShade</a></div><div class="ttdeci">sf::Color getRandomShade(sf::Color baseColor)</div><div class="ttdoc">Podobnie jak wyżej, lecz bez przypisania kanału alpha, oznaczjącego poziom transparentności piksela.</div><div class="ttdef"><b>Definition</b> <a href="operations_8cpp_source.html#l00167">operations.cpp:167</a></div></div>
+<div class="ttc" id="aclass_op_html_ac7f1d3161efaa13cf6d4f6aab0339f05"><div class="ttname"><a href="class_op.html#ac7f1d3161efaa13cf6d4f6aab0339f05">Op::Input</a></div><div class="ttdeci">void Input(std::vector&lt; std::vector&lt; int &gt; &gt; &amp;grid, sf::RenderWindow &amp;window)</div><div class="ttdoc">Funkcja do wprowadzania danych do siatki (grid) i renderowania na oknie (window).</div><div class="ttdef"><b>Definition</b> <a href="operations_8cpp_source.html#l00019">operations.cpp:19</a></div></div>
+<div class="ttc" id="aclass_op_html_ad924d548532f30aef735c0845634f7ad"><div class="ttname"><a href="class_op.html#ad924d548532f30aef735c0845634f7ad">Op::getRandomShadeAlpha</a></div><div class="ttdeci">sf::Color getRandomShadeAlpha(sf::Color baseColor)</div><div class="ttdoc">Funkcje do generowania losowych odcieni kolorów.</div></div>
+<div class="ttc" id="astuff_8hpp_html"><div class="ttname"><a href="stuff_8hpp.html">stuff.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
