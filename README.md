@@ -7,4 +7,4 @@ For developers interested in diving into the codebase, the game also includes Do
 
 
 <br><br><br>
-![App test](https://github.com/test.gif)
+![App test](https://raw.githubusercontent.com/Niutaq/Piksele_Symulowane/master/test.gif)
