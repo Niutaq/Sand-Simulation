@@ -1,0 +1,1211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Symulowane Piksele: Dokumentacja klasy FastNoiseLite</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Symulowane Piksele<span id="projectnumber">&#160;0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#pub-types">Typy publiczne</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_fast_noise_lite-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy FastNoiseLite</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fast_noise_lite_1_1_arguments__must__be__floating__point__values_3_01double_01_4.html">Arguments_must_be_floating_point_values&lt; double &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fast_noise_lite_1_1_arguments__must__be__floating__point__values_3_01float_01_4.html">Arguments_must_be_floating_point_values&lt; float &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fast_noise_lite_1_1_arguments__must__be__floating__point__values_3_01long_01double_01_4.html">Arguments_must_be_floating_point_values&lt; long double &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Typy publiczne</h2></td></tr>
+<tr class="memitem:a92524ce8eee37bd74571a624244d3b0a" id="r_a92524ce8eee37bd74571a624244d3b0a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0a">NoiseType</a> { <br />
+&#160;&#160;<a class="el" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa273710125306b24a19ad729077a4ba2a">NoiseType_OpenSimplex2</a>
+, <a class="el" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aaac17b4bccd3cfd15a497f62f35fdda02">NoiseType_OpenSimplex2S</a>
+, <a class="el" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aae89ea8cb91c2af29779c72a9999b6a9d">NoiseType_Cellular</a>
+, <a class="el" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa48814718aab8aa15024a1a6fb6e99985">NoiseType_Perlin</a>
+, <br />
+&#160;&#160;<a class="el" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa2ffe2220039377d96e1d7e6db8a76430">NoiseType_ValueCubic</a>
+, <a class="el" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa238407d71dbf00170b5880527a0280c2">NoiseType_Value</a>
+<br />
+ }</td></tr>
+<tr class="separator:a92524ce8eee37bd74571a624244d3b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4818a7309d29312a3732261beea8af" id="r_adc4818a7309d29312a3732261beea8af"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8af">RotationType3D</a> { <a class="el" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8afa59e3957062903084ab9e13f20f950901">RotationType3D_None</a>
+, <a class="el" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8afa1384eec7a60ea401549d8864211e6ae5">RotationType3D_ImproveXYPlanes</a>
+, <a class="el" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8afaf17e35a3980db55d702ef5dc063e37af">RotationType3D_ImproveXZPlanes</a>
+ }</td></tr>
+<tr class="separator:adc4818a7309d29312a3732261beea8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691456d5ac06f0b2a828b0e2d3e7f7f7" id="r_a691456d5ac06f0b2a828b0e2d3e7f7f7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7">FractalType</a> { <br />
+&#160;&#160;<a class="el" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7af093951a7dd378fa2c0358a732eefff1">FractalType_None</a>
+, <a class="el" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7ad25298c913211cb4c258b501da081a06">FractalType_FBm</a>
+, <a class="el" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7a7dbc5f9e9b13c0ba4fb87d4f21190ba6">FractalType_Ridged</a>
+, <a class="el" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7a35dd313649e5bcc962d1ed7cd2914a15">FractalType_PingPong</a>
+, <br />
+&#160;&#160;<a class="el" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7ac78be47e9b220eded04e2fd7f7ca55dc">FractalType_DomainWarpProgressive</a>
+, <a class="el" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7afd67757d93f8577128436183cf006230">FractalType_DomainWarpIndependent</a>
+<br />
+ }</td></tr>
+<tr class="separator:a691456d5ac06f0b2a828b0e2d3e7f7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398050da8e86742d6f0e8fb4cdf9851c" id="r_a398050da8e86742d6f0e8fb4cdf9851c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851c">CellularDistanceFunction</a> { <a class="el" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851ca9285bc2130d00d2074096a847fbca0c2">CellularDistanceFunction_Euclidean</a>
+, <a class="el" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851ca7e133daab308b37cfe068c98a0a5362c">CellularDistanceFunction_EuclideanSq</a>
+, <a class="el" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851ca5a986a5dd48b19b1547ed540d1442e78">CellularDistanceFunction_Manhattan</a>
+, <a class="el" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851caa502f996098a51acdcdd3d71fd85bcab">CellularDistanceFunction_Hybrid</a>
+ }</td></tr>
+<tr class="separator:a398050da8e86742d6f0e8fb4cdf9851c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b30b7fbc75d02e033e9776dbea52e82" id="r_a5b30b7fbc75d02e033e9776dbea52e82"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82">CellularReturnType</a> { <br />
+&#160;&#160;<a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82ab6f3c5e70d0a19c23581d914b235d1cf">CellularReturnType_CellValue</a>
+, <a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82aeea7b6e06cddcd0ad1432c22b2b596fc">CellularReturnType_Distance</a>
+, <a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82ada079e0363c8545e563cfad68fc31bd7">CellularReturnType_Distance2</a>
+, <a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82a1db39e56518560f9fad68a3a763d82db">CellularReturnType_Distance2Add</a>
+, <br />
+&#160;&#160;<a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82ab043f7fed712006800514bec486ea042">CellularReturnType_Distance2Sub</a>
+, <a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82a37a5663892c08b24d23fcde85348887c">CellularReturnType_Distance2Mul</a>
+, <a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82a0374f893396dd1784c3aeadc018965b3">CellularReturnType_Distance2Div</a>
+<br />
+ }</td></tr>
+<tr class="separator:a5b30b7fbc75d02e033e9776dbea52e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3acdac4a6f273e70240731c9a4a913" id="r_a6e3acdac4a6f273e70240731c9a4a913"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913">DomainWarpType</a> { <a class="el" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913ad2527f642f647ac188119f9332d12f32">DomainWarpType_OpenSimplex2</a>
+, <a class="el" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913a887121d445b27c5b5b5acb240eb480d1">DomainWarpType_OpenSimplex2Reduced</a>
+, <a class="el" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913a447821263f201badd6f3c275efa437d5">DomainWarpType_BasicGrid</a>
+ }</td></tr>
+<tr class="separator:a6e3acdac4a6f273e70240731c9a4a913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:aac059288dbce5a0ddcdd54c82df9aaf9" id="r_aac059288dbce5a0ddcdd54c82df9aaf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#aac059288dbce5a0ddcdd54c82df9aaf9">FastNoiseLite</a> (int seed=1337)</td></tr>
+<tr class="memdesc:aac059288dbce5a0ddcdd54c82df9aaf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new FastNoise object with optional seed.  <br /></td></tr>
+<tr class="separator:aac059288dbce5a0ddcdd54c82df9aaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2f591a9fb81fa37ec4ae45694ae90e" id="r_a4d2f591a9fb81fa37ec4ae45694ae90e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a4d2f591a9fb81fa37ec4ae45694ae90e">SetSeed</a> (int seed)</td></tr>
+<tr class="memdesc:a4d2f591a9fb81fa37ec4ae45694ae90e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets seed used for all noise types.  <br /></td></tr>
+<tr class="separator:a4d2f591a9fb81fa37ec4ae45694ae90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e268d7e687b658f83dee38ea7dc1afc" id="r_a6e268d7e687b658f83dee38ea7dc1afc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a6e268d7e687b658f83dee38ea7dc1afc">SetFrequency</a> (float frequency)</td></tr>
+<tr class="memdesc:a6e268d7e687b658f83dee38ea7dc1afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets frequency for all noise types.  <br /></td></tr>
+<tr class="separator:a6e268d7e687b658f83dee38ea7dc1afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af345b52cbe9b499eb6a0c1d9b72a738f" id="r_af345b52cbe9b499eb6a0c1d9b72a738f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#af345b52cbe9b499eb6a0c1d9b72a738f">SetNoiseType</a> (<a class="el" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0a">NoiseType</a> noiseType)</td></tr>
+<tr class="memdesc:af345b52cbe9b499eb6a0c1d9b72a738f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets noise algorithm used for GetNoise(...)  <br /></td></tr>
+<tr class="separator:af345b52cbe9b499eb6a0c1d9b72a738f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704dfe555b6ee0456707bb31e0aa8c0c" id="r_a704dfe555b6ee0456707bb31e0aa8c0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a704dfe555b6ee0456707bb31e0aa8c0c">SetRotationType3D</a> (<a class="el" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8af">RotationType3D</a> rotationType3D)</td></tr>
+<tr class="memdesc:a704dfe555b6ee0456707bb31e0aa8c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets domain rotation type for 3D Noise and 3D DomainWarp. Can aid in reducing directional artifacts when sampling a 2D plane in 3D.  <br /></td></tr>
+<tr class="separator:a704dfe555b6ee0456707bb31e0aa8c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaff254bccb75fe64d7eaa75fe3930d6" id="r_aaaff254bccb75fe64d7eaa75fe3930d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#aaaff254bccb75fe64d7eaa75fe3930d6">SetFractalType</a> (<a class="el" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7">FractalType</a> fractalType)</td></tr>
+<tr class="memdesc:aaaff254bccb75fe64d7eaa75fe3930d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets method for combining octaves in all fractal noise types.  <br /></td></tr>
+<tr class="separator:aaaff254bccb75fe64d7eaa75fe3930d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220275b5be1d2137f0a2f232a07e0792" id="r_a220275b5be1d2137f0a2f232a07e0792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a220275b5be1d2137f0a2f232a07e0792">SetFractalOctaves</a> (int octaves)</td></tr>
+<tr class="memdesc:a220275b5be1d2137f0a2f232a07e0792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets octave count for all fractal noise types.  <br /></td></tr>
+<tr class="separator:a220275b5be1d2137f0a2f232a07e0792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f35540c2eba7aa4378a73481bce283" id="r_a29f35540c2eba7aa4378a73481bce283"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a29f35540c2eba7aa4378a73481bce283">SetFractalLacunarity</a> (float lacunarity)</td></tr>
+<tr class="memdesc:a29f35540c2eba7aa4378a73481bce283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets octave lacunarity for all fractal noise types.  <br /></td></tr>
+<tr class="separator:a29f35540c2eba7aa4378a73481bce283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b68b34d506dd498533d7849a41fa78" id="r_aa1b68b34d506dd498533d7849a41fa78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#aa1b68b34d506dd498533d7849a41fa78">SetFractalGain</a> (float gain)</td></tr>
+<tr class="memdesc:aa1b68b34d506dd498533d7849a41fa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets octave gain for all fractal noise types.  <br /></td></tr>
+<tr class="separator:aa1b68b34d506dd498533d7849a41fa78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5f269464ab16934796ded272a12ffc" id="r_aca5f269464ab16934796ded272a12ffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#aca5f269464ab16934796ded272a12ffc">SetFractalWeightedStrength</a> (float weightedStrength)</td></tr>
+<tr class="memdesc:aca5f269464ab16934796ded272a12ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets octave weighting for all none DomainWarp fratal types.  <br /></td></tr>
+<tr class="separator:aca5f269464ab16934796ded272a12ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09b58924278defc443addb34cf80f59" id="r_ac09b58924278defc443addb34cf80f59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#ac09b58924278defc443addb34cf80f59">SetFractalPingPongStrength</a> (float pingPongStrength)</td></tr>
+<tr class="memdesc:ac09b58924278defc443addb34cf80f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets strength of the fractal ping pong effect.  <br /></td></tr>
+<tr class="separator:ac09b58924278defc443addb34cf80f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf01ec5bf90b724d43dfffd77280a1a" id="r_a3bf01ec5bf90b724d43dfffd77280a1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a3bf01ec5bf90b724d43dfffd77280a1a">SetCellularDistanceFunction</a> (<a class="el" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851c">CellularDistanceFunction</a> cellularDistanceFunction)</td></tr>
+<tr class="memdesc:a3bf01ec5bf90b724d43dfffd77280a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets distance function used in cellular noise calculations.  <br /></td></tr>
+<tr class="separator:a3bf01ec5bf90b724d43dfffd77280a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376f2fc231bbdc600fd70f423e84da8f" id="r_a376f2fc231bbdc600fd70f423e84da8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a376f2fc231bbdc600fd70f423e84da8f">SetCellularReturnType</a> (<a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82">CellularReturnType</a> cellularReturnType)</td></tr>
+<tr class="memdesc:a376f2fc231bbdc600fd70f423e84da8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets return type from cellular noise calculations.  <br /></td></tr>
+<tr class="separator:a376f2fc231bbdc600fd70f423e84da8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49c55743d5782ad3c752ccf2b08ef00" id="r_ae49c55743d5782ad3c752ccf2b08ef00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#ae49c55743d5782ad3c752ccf2b08ef00">SetCellularJitter</a> (float cellularJitter)</td></tr>
+<tr class="memdesc:ae49c55743d5782ad3c752ccf2b08ef00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum distance a cellular point can move from it's grid position.  <br /></td></tr>
+<tr class="separator:ae49c55743d5782ad3c752ccf2b08ef00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e449e628ce14581ca277cb8915f1ef" id="r_a22e449e628ce14581ca277cb8915f1ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a22e449e628ce14581ca277cb8915f1ef">SetDomainWarpType</a> (<a class="el" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913">DomainWarpType</a> domainWarpType)</td></tr>
+<tr class="memdesc:a22e449e628ce14581ca277cb8915f1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the warp algorithm when using DomainWarp(...)  <br /></td></tr>
+<tr class="separator:a22e449e628ce14581ca277cb8915f1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5677498f978e13915b241901885cc9" id="r_a5d5677498f978e13915b241901885cc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a5d5677498f978e13915b241901885cc9">SetDomainWarpAmp</a> (float domainWarpAmp)</td></tr>
+<tr class="memdesc:a5d5677498f978e13915b241901885cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum warp distance from original position when using DomainWarp(...)  <br /></td></tr>
+<tr class="separator:a5d5677498f978e13915b241901885cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5acf978145eba3730bb46033546c89c" id="r_ac5acf978145eba3730bb46033546c89c"><td class="memTemplParams" colspan="2">template&lt;typename FNfloat &gt; </td></tr>
+<tr class="memitem:ac5acf978145eba3730bb46033546c89c"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#ac5acf978145eba3730bb46033546c89c">GetNoise</a> (FNfloat x, FNfloat y) const</td></tr>
+<tr class="memdesc:ac5acf978145eba3730bb46033546c89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D noise at given position using current settings  <br /></td></tr>
+<tr class="separator:ac5acf978145eba3730bb46033546c89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab283c7ec7664484731c49f580a73d425" id="r_ab283c7ec7664484731c49f580a73d425"><td class="memTemplParams" colspan="2">template&lt;typename FNfloat &gt; </td></tr>
+<tr class="memitem:ab283c7ec7664484731c49f580a73d425"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#ab283c7ec7664484731c49f580a73d425">GetNoise</a> (FNfloat x, FNfloat y, FNfloat z) const</td></tr>
+<tr class="memdesc:ab283c7ec7664484731c49f580a73d425"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D noise at given position using current settings  <br /></td></tr>
+<tr class="separator:ab283c7ec7664484731c49f580a73d425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779a61505f0ba2c3854c3b14e86baf08" id="r_a779a61505f0ba2c3854c3b14e86baf08"><td class="memTemplParams" colspan="2">template&lt;typename FNfloat &gt; </td></tr>
+<tr class="memitem:a779a61505f0ba2c3854c3b14e86baf08"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a779a61505f0ba2c3854c3b14e86baf08">DomainWarp</a> (FNfloat &amp;x, FNfloat &amp;y) const</td></tr>
+<tr class="memdesc:a779a61505f0ba2c3854c3b14e86baf08"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D warps the input position using current domain warp settings  <br /></td></tr>
+<tr class="separator:a779a61505f0ba2c3854c3b14e86baf08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e24432919ce9cf6930442f5bdeaeb15" id="r_a7e24432919ce9cf6930442f5bdeaeb15"><td class="memTemplParams" colspan="2">template&lt;typename FNfloat &gt; </td></tr>
+<tr class="memitem:a7e24432919ce9cf6930442f5bdeaeb15"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_fast_noise_lite.html#a7e24432919ce9cf6930442f5bdeaeb15">DomainWarp</a> (FNfloat &amp;x, FNfloat &amp;y, FNfloat &amp;z) const</td></tr>
+<tr class="memdesc:a7e24432919ce9cf6930442f5bdeaeb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D warps the input position using current domain warp settings  <br /></td></tr>
+<tr class="separator:a7e24432919ce9cf6930442f5bdeaeb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00055">55</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja składowych wyliczanych</h2>
+<a id="a398050da8e86742d6f0e8fb4cdf9851c" name="a398050da8e86742d6f0e8fb4cdf9851c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a398050da8e86742d6f0e8fb4cdf9851c">&#9670;&#160;</a></span>CellularDistanceFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851c">FastNoiseLite::CellularDistanceFunction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="a398050da8e86742d6f0e8fb4cdf9851ca9285bc2130d00d2074096a847fbca0c2" name="a398050da8e86742d6f0e8fb4cdf9851ca9285bc2130d00d2074096a847fbca0c2"></a>CellularDistanceFunction_Euclidean&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a398050da8e86742d6f0e8fb4cdf9851ca7e133daab308b37cfe068c98a0a5362c" name="a398050da8e86742d6f0e8fb4cdf9851ca7e133daab308b37cfe068c98a0a5362c"></a>CellularDistanceFunction_EuclideanSq&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a398050da8e86742d6f0e8fb4cdf9851ca5a986a5dd48b19b1547ed540d1442e78" name="a398050da8e86742d6f0e8fb4cdf9851ca5a986a5dd48b19b1547ed540d1442e78"></a>CellularDistanceFunction_Manhattan&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a398050da8e86742d6f0e8fb4cdf9851caa502f996098a51acdcdd3d71fd85bcab" name="a398050da8e86742d6f0e8fb4cdf9851caa502f996098a51acdcdd3d71fd85bcab"></a>CellularDistanceFunction_Hybrid&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00085">85</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>    {</div>
+<div class="line"><span class="lineno">   87</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851ca9285bc2130d00d2074096a847fbca0c2">CellularDistanceFunction_Euclidean</a>,</div>
+<div class="line"><span class="lineno">   88</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851ca7e133daab308b37cfe068c98a0a5362c">CellularDistanceFunction_EuclideanSq</a>,</div>
+<div class="line"><span class="lineno">   89</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851ca5a986a5dd48b19b1547ed540d1442e78">CellularDistanceFunction_Manhattan</a>,</div>
+<div class="line"><span class="lineno">   90</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851caa502f996098a51acdcdd3d71fd85bcab">CellularDistanceFunction_Hybrid</a></div>
+<div class="line"><span class="lineno">   91</span>    };</div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a398050da8e86742d6f0e8fb4cdf9851ca5a986a5dd48b19b1547ed540d1442e78"><div class="ttname"><a href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851ca5a986a5dd48b19b1547ed540d1442e78">FastNoiseLite::CellularDistanceFunction_Manhattan</a></div><div class="ttdeci">@ CellularDistanceFunction_Manhattan</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00089">FastNoiseLite.h:89</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a398050da8e86742d6f0e8fb4cdf9851ca7e133daab308b37cfe068c98a0a5362c"><div class="ttname"><a href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851ca7e133daab308b37cfe068c98a0a5362c">FastNoiseLite::CellularDistanceFunction_EuclideanSq</a></div><div class="ttdeci">@ CellularDistanceFunction_EuclideanSq</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00088">FastNoiseLite.h:88</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a398050da8e86742d6f0e8fb4cdf9851ca9285bc2130d00d2074096a847fbca0c2"><div class="ttname"><a href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851ca9285bc2130d00d2074096a847fbca0c2">FastNoiseLite::CellularDistanceFunction_Euclidean</a></div><div class="ttdeci">@ CellularDistanceFunction_Euclidean</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00087">FastNoiseLite.h:87</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a398050da8e86742d6f0e8fb4cdf9851caa502f996098a51acdcdd3d71fd85bcab"><div class="ttname"><a href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851caa502f996098a51acdcdd3d71fd85bcab">FastNoiseLite::CellularDistanceFunction_Hybrid</a></div><div class="ttdeci">@ CellularDistanceFunction_Hybrid</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00091">FastNoiseLite.h:90</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5b30b7fbc75d02e033e9776dbea52e82" name="a5b30b7fbc75d02e033e9776dbea52e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b30b7fbc75d02e033e9776dbea52e82">&#9670;&#160;</a></span>CellularReturnType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82">FastNoiseLite::CellularReturnType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="a5b30b7fbc75d02e033e9776dbea52e82ab6f3c5e70d0a19c23581d914b235d1cf" name="a5b30b7fbc75d02e033e9776dbea52e82ab6f3c5e70d0a19c23581d914b235d1cf"></a>CellularReturnType_CellValue&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5b30b7fbc75d02e033e9776dbea52e82aeea7b6e06cddcd0ad1432c22b2b596fc" name="a5b30b7fbc75d02e033e9776dbea52e82aeea7b6e06cddcd0ad1432c22b2b596fc"></a>CellularReturnType_Distance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5b30b7fbc75d02e033e9776dbea52e82ada079e0363c8545e563cfad68fc31bd7" name="a5b30b7fbc75d02e033e9776dbea52e82ada079e0363c8545e563cfad68fc31bd7"></a>CellularReturnType_Distance2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5b30b7fbc75d02e033e9776dbea52e82a1db39e56518560f9fad68a3a763d82db" name="a5b30b7fbc75d02e033e9776dbea52e82a1db39e56518560f9fad68a3a763d82db"></a>CellularReturnType_Distance2Add&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5b30b7fbc75d02e033e9776dbea52e82ab043f7fed712006800514bec486ea042" name="a5b30b7fbc75d02e033e9776dbea52e82ab043f7fed712006800514bec486ea042"></a>CellularReturnType_Distance2Sub&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5b30b7fbc75d02e033e9776dbea52e82a37a5663892c08b24d23fcde85348887c" name="a5b30b7fbc75d02e033e9776dbea52e82a37a5663892c08b24d23fcde85348887c"></a>CellularReturnType_Distance2Mul&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5b30b7fbc75d02e033e9776dbea52e82a0374f893396dd1784c3aeadc018965b3" name="a5b30b7fbc75d02e033e9776dbea52e82a0374f893396dd1784c3aeadc018965b3"></a>CellularReturnType_Distance2Div&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00093">93</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>    {</div>
+<div class="line"><span class="lineno">   95</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82ab6f3c5e70d0a19c23581d914b235d1cf">CellularReturnType_CellValue</a>,</div>
+<div class="line"><span class="lineno">   96</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82aeea7b6e06cddcd0ad1432c22b2b596fc">CellularReturnType_Distance</a>,</div>
+<div class="line"><span class="lineno">   97</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82ada079e0363c8545e563cfad68fc31bd7">CellularReturnType_Distance2</a>,</div>
+<div class="line"><span class="lineno">   98</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82a1db39e56518560f9fad68a3a763d82db">CellularReturnType_Distance2Add</a>,</div>
+<div class="line"><span class="lineno">   99</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82ab043f7fed712006800514bec486ea042">CellularReturnType_Distance2Sub</a>,</div>
+<div class="line"><span class="lineno">  100</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82a37a5663892c08b24d23fcde85348887c">CellularReturnType_Distance2Mul</a>,</div>
+<div class="line"><span class="lineno">  101</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82a0374f893396dd1784c3aeadc018965b3">CellularReturnType_Distance2Div</a></div>
+<div class="line"><span class="lineno">  102</span>    };</div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a5b30b7fbc75d02e033e9776dbea52e82a0374f893396dd1784c3aeadc018965b3"><div class="ttname"><a href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82a0374f893396dd1784c3aeadc018965b3">FastNoiseLite::CellularReturnType_Distance2Div</a></div><div class="ttdeci">@ CellularReturnType_Distance2Div</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00102">FastNoiseLite.h:101</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a5b30b7fbc75d02e033e9776dbea52e82a1db39e56518560f9fad68a3a763d82db"><div class="ttname"><a href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82a1db39e56518560f9fad68a3a763d82db">FastNoiseLite::CellularReturnType_Distance2Add</a></div><div class="ttdeci">@ CellularReturnType_Distance2Add</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00098">FastNoiseLite.h:98</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a5b30b7fbc75d02e033e9776dbea52e82a37a5663892c08b24d23fcde85348887c"><div class="ttname"><a href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82a37a5663892c08b24d23fcde85348887c">FastNoiseLite::CellularReturnType_Distance2Mul</a></div><div class="ttdeci">@ CellularReturnType_Distance2Mul</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00100">FastNoiseLite.h:100</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a5b30b7fbc75d02e033e9776dbea52e82ab043f7fed712006800514bec486ea042"><div class="ttname"><a href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82ab043f7fed712006800514bec486ea042">FastNoiseLite::CellularReturnType_Distance2Sub</a></div><div class="ttdeci">@ CellularReturnType_Distance2Sub</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00099">FastNoiseLite.h:99</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a5b30b7fbc75d02e033e9776dbea52e82ab6f3c5e70d0a19c23581d914b235d1cf"><div class="ttname"><a href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82ab6f3c5e70d0a19c23581d914b235d1cf">FastNoiseLite::CellularReturnType_CellValue</a></div><div class="ttdeci">@ CellularReturnType_CellValue</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00095">FastNoiseLite.h:95</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a5b30b7fbc75d02e033e9776dbea52e82ada079e0363c8545e563cfad68fc31bd7"><div class="ttname"><a href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82ada079e0363c8545e563cfad68fc31bd7">FastNoiseLite::CellularReturnType_Distance2</a></div><div class="ttdeci">@ CellularReturnType_Distance2</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00097">FastNoiseLite.h:97</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a5b30b7fbc75d02e033e9776dbea52e82aeea7b6e06cddcd0ad1432c22b2b596fc"><div class="ttname"><a href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82aeea7b6e06cddcd0ad1432c22b2b596fc">FastNoiseLite::CellularReturnType_Distance</a></div><div class="ttdeci">@ CellularReturnType_Distance</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00096">FastNoiseLite.h:96</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6e3acdac4a6f273e70240731c9a4a913" name="a6e3acdac4a6f273e70240731c9a4a913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3acdac4a6f273e70240731c9a4a913">&#9670;&#160;</a></span>DomainWarpType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913">FastNoiseLite::DomainWarpType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="a6e3acdac4a6f273e70240731c9a4a913ad2527f642f647ac188119f9332d12f32" name="a6e3acdac4a6f273e70240731c9a4a913ad2527f642f647ac188119f9332d12f32"></a>DomainWarpType_OpenSimplex2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6e3acdac4a6f273e70240731c9a4a913a887121d445b27c5b5b5acb240eb480d1" name="a6e3acdac4a6f273e70240731c9a4a913a887121d445b27c5b5b5acb240eb480d1"></a>DomainWarpType_OpenSimplex2Reduced&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6e3acdac4a6f273e70240731c9a4a913a447821263f201badd6f3c275efa437d5" name="a6e3acdac4a6f273e70240731c9a4a913a447821263f201badd6f3c275efa437d5"></a>DomainWarpType_BasicGrid&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00104">104</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>    {</div>
+<div class="line"><span class="lineno">  106</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913ad2527f642f647ac188119f9332d12f32">DomainWarpType_OpenSimplex2</a>,</div>
+<div class="line"><span class="lineno">  107</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913a887121d445b27c5b5b5acb240eb480d1">DomainWarpType_OpenSimplex2Reduced</a>,</div>
+<div class="line"><span class="lineno">  108</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913a447821263f201badd6f3c275efa437d5">DomainWarpType_BasicGrid</a></div>
+<div class="line"><span class="lineno">  109</span>    };</div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a6e3acdac4a6f273e70240731c9a4a913a447821263f201badd6f3c275efa437d5"><div class="ttname"><a href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913a447821263f201badd6f3c275efa437d5">FastNoiseLite::DomainWarpType_BasicGrid</a></div><div class="ttdeci">@ DomainWarpType_BasicGrid</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00109">FastNoiseLite.h:108</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a6e3acdac4a6f273e70240731c9a4a913a887121d445b27c5b5b5acb240eb480d1"><div class="ttname"><a href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913a887121d445b27c5b5b5acb240eb480d1">FastNoiseLite::DomainWarpType_OpenSimplex2Reduced</a></div><div class="ttdeci">@ DomainWarpType_OpenSimplex2Reduced</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00107">FastNoiseLite.h:107</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a6e3acdac4a6f273e70240731c9a4a913ad2527f642f647ac188119f9332d12f32"><div class="ttname"><a href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913ad2527f642f647ac188119f9332d12f32">FastNoiseLite::DomainWarpType_OpenSimplex2</a></div><div class="ttdeci">@ DomainWarpType_OpenSimplex2</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00106">FastNoiseLite.h:106</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a691456d5ac06f0b2a828b0e2d3e7f7f7" name="a691456d5ac06f0b2a828b0e2d3e7f7f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691456d5ac06f0b2a828b0e2d3e7f7f7">&#9670;&#160;</a></span>FractalType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7">FastNoiseLite::FractalType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="a691456d5ac06f0b2a828b0e2d3e7f7f7af093951a7dd378fa2c0358a732eefff1" name="a691456d5ac06f0b2a828b0e2d3e7f7f7af093951a7dd378fa2c0358a732eefff1"></a>FractalType_None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a691456d5ac06f0b2a828b0e2d3e7f7f7ad25298c913211cb4c258b501da081a06" name="a691456d5ac06f0b2a828b0e2d3e7f7f7ad25298c913211cb4c258b501da081a06"></a>FractalType_FBm&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a691456d5ac06f0b2a828b0e2d3e7f7f7a7dbc5f9e9b13c0ba4fb87d4f21190ba6" name="a691456d5ac06f0b2a828b0e2d3e7f7f7a7dbc5f9e9b13c0ba4fb87d4f21190ba6"></a>FractalType_Ridged&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a691456d5ac06f0b2a828b0e2d3e7f7f7a35dd313649e5bcc962d1ed7cd2914a15" name="a691456d5ac06f0b2a828b0e2d3e7f7f7a35dd313649e5bcc962d1ed7cd2914a15"></a>FractalType_PingPong&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a691456d5ac06f0b2a828b0e2d3e7f7f7ac78be47e9b220eded04e2fd7f7ca55dc" name="a691456d5ac06f0b2a828b0e2d3e7f7f7ac78be47e9b220eded04e2fd7f7ca55dc"></a>FractalType_DomainWarpProgressive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a691456d5ac06f0b2a828b0e2d3e7f7f7afd67757d93f8577128436183cf006230" name="a691456d5ac06f0b2a828b0e2d3e7f7f7afd67757d93f8577128436183cf006230"></a>FractalType_DomainWarpIndependent&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00075">75</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>    {</div>
+<div class="line"><span class="lineno">   77</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7af093951a7dd378fa2c0358a732eefff1">FractalType_None</a>,</div>
+<div class="line"><span class="lineno">   78</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7ad25298c913211cb4c258b501da081a06">FractalType_FBm</a>,</div>
+<div class="line"><span class="lineno">   79</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7a7dbc5f9e9b13c0ba4fb87d4f21190ba6">FractalType_Ridged</a>,</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7a35dd313649e5bcc962d1ed7cd2914a15">FractalType_PingPong</a>,</div>
+<div class="line"><span class="lineno">   81</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7ac78be47e9b220eded04e2fd7f7ca55dc">FractalType_DomainWarpProgressive</a>,</div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7afd67757d93f8577128436183cf006230">FractalType_DomainWarpIndependent</a></div>
+<div class="line"><span class="lineno">   83</span>    };</div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a691456d5ac06f0b2a828b0e2d3e7f7f7a35dd313649e5bcc962d1ed7cd2914a15"><div class="ttname"><a href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7a35dd313649e5bcc962d1ed7cd2914a15">FastNoiseLite::FractalType_PingPong</a></div><div class="ttdeci">@ FractalType_PingPong</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00080">FastNoiseLite.h:80</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a691456d5ac06f0b2a828b0e2d3e7f7f7a7dbc5f9e9b13c0ba4fb87d4f21190ba6"><div class="ttname"><a href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7a7dbc5f9e9b13c0ba4fb87d4f21190ba6">FastNoiseLite::FractalType_Ridged</a></div><div class="ttdeci">@ FractalType_Ridged</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00079">FastNoiseLite.h:79</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a691456d5ac06f0b2a828b0e2d3e7f7f7ac78be47e9b220eded04e2fd7f7ca55dc"><div class="ttname"><a href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7ac78be47e9b220eded04e2fd7f7ca55dc">FastNoiseLite::FractalType_DomainWarpProgressive</a></div><div class="ttdeci">@ FractalType_DomainWarpProgressive</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00081">FastNoiseLite.h:81</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a691456d5ac06f0b2a828b0e2d3e7f7f7ad25298c913211cb4c258b501da081a06"><div class="ttname"><a href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7ad25298c913211cb4c258b501da081a06">FastNoiseLite::FractalType_FBm</a></div><div class="ttdeci">@ FractalType_FBm</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00078">FastNoiseLite.h:78</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a691456d5ac06f0b2a828b0e2d3e7f7f7af093951a7dd378fa2c0358a732eefff1"><div class="ttname"><a href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7af093951a7dd378fa2c0358a732eefff1">FastNoiseLite::FractalType_None</a></div><div class="ttdeci">@ FractalType_None</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00077">FastNoiseLite.h:77</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a691456d5ac06f0b2a828b0e2d3e7f7f7afd67757d93f8577128436183cf006230"><div class="ttname"><a href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7afd67757d93f8577128436183cf006230">FastNoiseLite::FractalType_DomainWarpIndependent</a></div><div class="ttdeci">@ FractalType_DomainWarpIndependent</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00083">FastNoiseLite.h:82</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a92524ce8eee37bd74571a624244d3b0a" name="a92524ce8eee37bd74571a624244d3b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92524ce8eee37bd74571a624244d3b0a">&#9670;&#160;</a></span>NoiseType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0a">FastNoiseLite::NoiseType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="a92524ce8eee37bd74571a624244d3b0aa273710125306b24a19ad729077a4ba2a" name="a92524ce8eee37bd74571a624244d3b0aa273710125306b24a19ad729077a4ba2a"></a>NoiseType_OpenSimplex2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a92524ce8eee37bd74571a624244d3b0aaac17b4bccd3cfd15a497f62f35fdda02" name="a92524ce8eee37bd74571a624244d3b0aaac17b4bccd3cfd15a497f62f35fdda02"></a>NoiseType_OpenSimplex2S&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a92524ce8eee37bd74571a624244d3b0aae89ea8cb91c2af29779c72a9999b6a9d" name="a92524ce8eee37bd74571a624244d3b0aae89ea8cb91c2af29779c72a9999b6a9d"></a>NoiseType_Cellular&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a92524ce8eee37bd74571a624244d3b0aa48814718aab8aa15024a1a6fb6e99985" name="a92524ce8eee37bd74571a624244d3b0aa48814718aab8aa15024a1a6fb6e99985"></a>NoiseType_Perlin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a92524ce8eee37bd74571a624244d3b0aa2ffe2220039377d96e1d7e6db8a76430" name="a92524ce8eee37bd74571a624244d3b0aa2ffe2220039377d96e1d7e6db8a76430"></a>NoiseType_ValueCubic&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a92524ce8eee37bd74571a624244d3b0aa238407d71dbf00170b5880527a0280c2" name="a92524ce8eee37bd74571a624244d3b0aa238407d71dbf00170b5880527a0280c2"></a>NoiseType_Value&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00058">58</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>    {</div>
+<div class="line"><span class="lineno">   60</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa273710125306b24a19ad729077a4ba2a">NoiseType_OpenSimplex2</a>,</div>
+<div class="line"><span class="lineno">   61</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aaac17b4bccd3cfd15a497f62f35fdda02">NoiseType_OpenSimplex2S</a>,</div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aae89ea8cb91c2af29779c72a9999b6a9d">NoiseType_Cellular</a>,</div>
+<div class="line"><span class="lineno">   63</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa48814718aab8aa15024a1a6fb6e99985">NoiseType_Perlin</a>,</div>
+<div class="line"><span class="lineno">   64</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa2ffe2220039377d96e1d7e6db8a76430">NoiseType_ValueCubic</a>,</div>
+<div class="line"><span class="lineno">   65</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa238407d71dbf00170b5880527a0280c2">NoiseType_Value</a></div>
+<div class="line"><span class="lineno">   66</span>    };</div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a92524ce8eee37bd74571a624244d3b0aa238407d71dbf00170b5880527a0280c2"><div class="ttname"><a href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa238407d71dbf00170b5880527a0280c2">FastNoiseLite::NoiseType_Value</a></div><div class="ttdeci">@ NoiseType_Value</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00066">FastNoiseLite.h:65</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a92524ce8eee37bd74571a624244d3b0aa273710125306b24a19ad729077a4ba2a"><div class="ttname"><a href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa273710125306b24a19ad729077a4ba2a">FastNoiseLite::NoiseType_OpenSimplex2</a></div><div class="ttdeci">@ NoiseType_OpenSimplex2</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00060">FastNoiseLite.h:60</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a92524ce8eee37bd74571a624244d3b0aa2ffe2220039377d96e1d7e6db8a76430"><div class="ttname"><a href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa2ffe2220039377d96e1d7e6db8a76430">FastNoiseLite::NoiseType_ValueCubic</a></div><div class="ttdeci">@ NoiseType_ValueCubic</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00064">FastNoiseLite.h:64</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a92524ce8eee37bd74571a624244d3b0aa48814718aab8aa15024a1a6fb6e99985"><div class="ttname"><a href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa48814718aab8aa15024a1a6fb6e99985">FastNoiseLite::NoiseType_Perlin</a></div><div class="ttdeci">@ NoiseType_Perlin</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00063">FastNoiseLite.h:63</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a92524ce8eee37bd74571a624244d3b0aaac17b4bccd3cfd15a497f62f35fdda02"><div class="ttname"><a href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aaac17b4bccd3cfd15a497f62f35fdda02">FastNoiseLite::NoiseType_OpenSimplex2S</a></div><div class="ttdeci">@ NoiseType_OpenSimplex2S</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00061">FastNoiseLite.h:61</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a92524ce8eee37bd74571a624244d3b0aae89ea8cb91c2af29779c72a9999b6a9d"><div class="ttname"><a href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aae89ea8cb91c2af29779c72a9999b6a9d">FastNoiseLite::NoiseType_Cellular</a></div><div class="ttdeci">@ NoiseType_Cellular</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00062">FastNoiseLite.h:62</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adc4818a7309d29312a3732261beea8af" name="adc4818a7309d29312a3732261beea8af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc4818a7309d29312a3732261beea8af">&#9670;&#160;</a></span>RotationType3D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8af">FastNoiseLite::RotationType3D</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="adc4818a7309d29312a3732261beea8afa59e3957062903084ab9e13f20f950901" name="adc4818a7309d29312a3732261beea8afa59e3957062903084ab9e13f20f950901"></a>RotationType3D_None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adc4818a7309d29312a3732261beea8afa1384eec7a60ea401549d8864211e6ae5" name="adc4818a7309d29312a3732261beea8afa1384eec7a60ea401549d8864211e6ae5"></a>RotationType3D_ImproveXYPlanes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adc4818a7309d29312a3732261beea8afaf17e35a3980db55d702ef5dc063e37af" name="adc4818a7309d29312a3732261beea8afaf17e35a3980db55d702ef5dc063e37af"></a>RotationType3D_ImproveXZPlanes&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00068">68</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>    {</div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8afa59e3957062903084ab9e13f20f950901">RotationType3D_None</a>,</div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8afa1384eec7a60ea401549d8864211e6ae5">RotationType3D_ImproveXYPlanes</a>,</div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_enumvalue" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8afaf17e35a3980db55d702ef5dc063e37af">RotationType3D_ImproveXZPlanes</a></div>
+<div class="line"><span class="lineno">   73</span>    };</div>
+<div class="ttc" id="aclass_fast_noise_lite_html_adc4818a7309d29312a3732261beea8afa1384eec7a60ea401549d8864211e6ae5"><div class="ttname"><a href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8afa1384eec7a60ea401549d8864211e6ae5">FastNoiseLite::RotationType3D_ImproveXYPlanes</a></div><div class="ttdeci">@ RotationType3D_ImproveXYPlanes</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00071">FastNoiseLite.h:71</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_adc4818a7309d29312a3732261beea8afa59e3957062903084ab9e13f20f950901"><div class="ttname"><a href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8afa59e3957062903084ab9e13f20f950901">FastNoiseLite::RotationType3D_None</a></div><div class="ttdeci">@ RotationType3D_None</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00070">FastNoiseLite.h:70</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_adc4818a7309d29312a3732261beea8afaf17e35a3980db55d702ef5dc063e37af"><div class="ttname"><a href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8afaf17e35a3980db55d702ef5dc063e37af">FastNoiseLite::RotationType3D_ImproveXZPlanes</a></div><div class="ttdeci">@ RotationType3D_ImproveXZPlanes</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00073">FastNoiseLite.h:72</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="aac059288dbce5a0ddcdd54c82df9aaf9" name="aac059288dbce5a0ddcdd54c82df9aaf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac059288dbce5a0ddcdd54c82df9aaf9">&#9670;&#160;</a></span>FastNoiseLite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FastNoiseLite::FastNoiseLite </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>seed</em> = <code>1337</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create new FastNoise object with optional seed. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00114">114</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>    {</div>
+<div class="line"><span class="lineno">  116</span>        mSeed = seed;</div>
+<div class="line"><span class="lineno">  117</span>        mFrequency = 0.01f;</div>
+<div class="line"><span class="lineno">  118</span>        mNoiseType = <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0aa273710125306b24a19ad729077a4ba2a">NoiseType_OpenSimplex2</a>;</div>
+<div class="line"><span class="lineno">  119</span>        mRotationType3D = <a class="code hl_enumvalue" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8afa59e3957062903084ab9e13f20f950901">RotationType3D_None</a>;</div>
+<div class="line"><span class="lineno">  120</span>        mTransformType3D = TransformType3D_DefaultOpenSimplex2;</div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>        mFractalType = <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7af093951a7dd378fa2c0358a732eefff1">FractalType_None</a>;</div>
+<div class="line"><span class="lineno">  123</span>        mOctaves = 3;</div>
+<div class="line"><span class="lineno">  124</span>        mLacunarity = 2.0f;</div>
+<div class="line"><span class="lineno">  125</span>        mGain = 0.5f;</div>
+<div class="line"><span class="lineno">  126</span>        mWeightedStrength = 0.0f;</div>
+<div class="line"><span class="lineno">  127</span>        mPingPongStrength = 2.0f;</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>        mFractalBounding = 1 / 1.75f;</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>        mCellularDistanceFunction = <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851ca7e133daab308b37cfe068c98a0a5362c">CellularDistanceFunction_EuclideanSq</a>;</div>
+<div class="line"><span class="lineno">  132</span>        mCellularReturnType = <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82aeea7b6e06cddcd0ad1432c22b2b596fc">CellularReturnType_Distance</a>;</div>
+<div class="line"><span class="lineno">  133</span>        mCellularJitterModifier = 1.0f;</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>        mDomainWarpType = <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913ad2527f642f647ac188119f9332d12f32">DomainWarpType_OpenSimplex2</a>;</div>
+<div class="line"><span class="lineno">  136</span>        mWarpTransformType3D = TransformType3D_DefaultOpenSimplex2;</div>
+<div class="line"><span class="lineno">  137</span>        mDomainWarpAmp = 1.0f;</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a779a61505f0ba2c3854c3b14e86baf08" name="a779a61505f0ba2c3854c3b14e86baf08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a779a61505f0ba2c3854c3b14e86baf08">&#9670;&#160;</a></span>DomainWarp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FNfloat &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::DomainWarp </td>
+          <td>(</td>
+          <td class="paramtype">FNfloat &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FNfloat &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>2D warps the input position using current domain warp settings </p>
+<p>Example usage with GetNoise </p><div class="fragment"><div class="line"><a class="code hl_function" href="class_fast_noise_lite.html#a779a61505f0ba2c3854c3b14e86baf08">DomainWarp</a>(x, y)</div>
+<div class="line">noise = <a class="code hl_function" href="class_fast_noise_lite.html#ac5acf978145eba3730bb46033546c89c">GetNoise</a>(x, y)</div>
+<div class="ttc" id="aclass_fast_noise_lite_html_a779a61505f0ba2c3854c3b14e86baf08"><div class="ttname"><a href="class_fast_noise_lite.html#a779a61505f0ba2c3854c3b14e86baf08">FastNoiseLite::DomainWarp</a></div><div class="ttdeci">void DomainWarp(FNfloat &amp;x, FNfloat &amp;y) const</div><div class="ttdoc">2D warps the input position using current domain warp settings</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00351">FastNoiseLite.h:351</a></div></div>
+<div class="ttc" id="aclass_fast_noise_lite_html_ac5acf978145eba3730bb46033546c89c"><div class="ttname"><a href="class_fast_noise_lite.html#ac5acf978145eba3730bb46033546c89c">FastNoiseLite::GetNoise</a></div><div class="ttdeci">float GetNoise(FNfloat x, FNfloat y) const</div><div class="ttdoc">2D noise at given position using current settings</div><div class="ttdef"><b>Definition</b> <a href="_fast_noise_lite_8h_source.html#l00296">FastNoiseLite.h:296</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00351">351</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  352</span>    {</div>
+<div class="line"><span class="lineno">  353</span>        Arguments_must_be_floating_point_values&lt;FNfloat&gt;();</div>
+<div class="line"><span class="lineno">  354</span> </div>
+<div class="line"><span class="lineno">  355</span>        <span class="keywordflow">switch</span> (mFractalType)</div>
+<div class="line"><span class="lineno">  356</span>        {</div>
+<div class="line"><span class="lineno">  357</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  358</span>            DomainWarpSingle(x, y);</div>
+<div class="line"><span class="lineno">  359</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  360</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7ac78be47e9b220eded04e2fd7f7ca55dc">FractalType_DomainWarpProgressive</a>:</div>
+<div class="line"><span class="lineno">  361</span>            DomainWarpFractalProgressive(x, y);</div>
+<div class="line"><span class="lineno">  362</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  363</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7afd67757d93f8577128436183cf006230">FractalType_DomainWarpIndependent</a>:</div>
+<div class="line"><span class="lineno">  364</span>            DomainWarpFractalIndependent(x, y);</div>
+<div class="line"><span class="lineno">  365</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  366</span>        }</div>
+<div class="line"><span class="lineno">  367</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7e24432919ce9cf6930442f5bdeaeb15" name="a7e24432919ce9cf6930442f5bdeaeb15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e24432919ce9cf6930442f5bdeaeb15">&#9670;&#160;</a></span>DomainWarp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FNfloat &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::DomainWarp </td>
+          <td>(</td>
+          <td class="paramtype">FNfloat &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FNfloat &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FNfloat &amp;&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>3D warps the input position using current domain warp settings </p>
+<p>Example usage with GetNoise </p><div class="fragment"><div class="line"><a class="code hl_function" href="class_fast_noise_lite.html#a779a61505f0ba2c3854c3b14e86baf08">DomainWarp</a>(x, y, z)</div>
+<div class="line">noise = <a class="code hl_function" href="class_fast_noise_lite.html#ac5acf978145eba3730bb46033546c89c">GetNoise</a>(x, y, z)</div>
+</div><!-- fragment --> 
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00378">378</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  379</span>    {</div>
+<div class="line"><span class="lineno">  380</span>        Arguments_must_be_floating_point_values&lt;FNfloat&gt;();</div>
+<div class="line"><span class="lineno">  381</span> </div>
+<div class="line"><span class="lineno">  382</span>        <span class="keywordflow">switch</span> (mFractalType)</div>
+<div class="line"><span class="lineno">  383</span>        {</div>
+<div class="line"><span class="lineno">  384</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  385</span>            DomainWarpSingle(x, y, z);</div>
+<div class="line"><span class="lineno">  386</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  387</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7ac78be47e9b220eded04e2fd7f7ca55dc">FractalType_DomainWarpProgressive</a>:</div>
+<div class="line"><span class="lineno">  388</span>            DomainWarpFractalProgressive(x, y, z);</div>
+<div class="line"><span class="lineno">  389</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  390</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7afd67757d93f8577128436183cf006230">FractalType_DomainWarpIndependent</a>:</div>
+<div class="line"><span class="lineno">  391</span>            DomainWarpFractalIndependent(x, y, z);</div>
+<div class="line"><span class="lineno">  392</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  393</span>        }</div>
+<div class="line"><span class="lineno">  394</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac5acf978145eba3730bb46033546c89c" name="ac5acf978145eba3730bb46033546c89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5acf978145eba3730bb46033546c89c">&#9670;&#160;</a></span>GetNoise() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FNfloat &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FastNoiseLite::GetNoise </td>
+          <td>(</td>
+          <td class="paramtype">FNfloat&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FNfloat&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>2D noise at given position using current settings </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Noise output bounded between -1...1 </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00296">296</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  297</span>    {</div>
+<div class="line"><span class="lineno">  298</span>        Arguments_must_be_floating_point_values&lt;FNfloat&gt;();</div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>        TransformNoiseCoordinate(x, y);</div>
+<div class="line"><span class="lineno">  301</span> </div>
+<div class="line"><span class="lineno">  302</span>        <span class="keywordflow">switch</span> (mFractalType)</div>
+<div class="line"><span class="lineno">  303</span>        {</div>
+<div class="line"><span class="lineno">  304</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  305</span>            <span class="keywordflow">return</span> GenNoiseSingle(mSeed, x, y);</div>
+<div class="line"><span class="lineno">  306</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7ad25298c913211cb4c258b501da081a06">FractalType_FBm</a>:</div>
+<div class="line"><span class="lineno">  307</span>            <span class="keywordflow">return</span> GenFractalFBm(x, y);</div>
+<div class="line"><span class="lineno">  308</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7a7dbc5f9e9b13c0ba4fb87d4f21190ba6">FractalType_Ridged</a>:</div>
+<div class="line"><span class="lineno">  309</span>            <span class="keywordflow">return</span> GenFractalRidged(x, y);</div>
+<div class="line"><span class="lineno">  310</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7a35dd313649e5bcc962d1ed7cd2914a15">FractalType_PingPong</a>:</div>
+<div class="line"><span class="lineno">  311</span>            <span class="keywordflow">return</span> GenFractalPingPong(x, y);</div>
+<div class="line"><span class="lineno">  312</span>        }</div>
+<div class="line"><span class="lineno">  313</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab283c7ec7664484731c49f580a73d425" name="ab283c7ec7664484731c49f580a73d425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab283c7ec7664484731c49f580a73d425">&#9670;&#160;</a></span>GetNoise() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FNfloat &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FastNoiseLite::GetNoise </td>
+          <td>(</td>
+          <td class="paramtype">FNfloat&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FNfloat&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FNfloat&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>3D noise at given position using current settings </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Noise output bounded between -1...1 </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00322">322</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  323</span>    {</div>
+<div class="line"><span class="lineno">  324</span>        Arguments_must_be_floating_point_values&lt;FNfloat&gt;();</div>
+<div class="line"><span class="lineno">  325</span> </div>
+<div class="line"><span class="lineno">  326</span>        TransformNoiseCoordinate(x, y, z);</div>
+<div class="line"><span class="lineno">  327</span> </div>
+<div class="line"><span class="lineno">  328</span>        <span class="keywordflow">switch</span> (mFractalType)</div>
+<div class="line"><span class="lineno">  329</span>        {</div>
+<div class="line"><span class="lineno">  330</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  331</span>            <span class="keywordflow">return</span> GenNoiseSingle(mSeed, x, y, z);</div>
+<div class="line"><span class="lineno">  332</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7ad25298c913211cb4c258b501da081a06">FractalType_FBm</a>:</div>
+<div class="line"><span class="lineno">  333</span>            <span class="keywordflow">return</span> GenFractalFBm(x, y, z);</div>
+<div class="line"><span class="lineno">  334</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7a7dbc5f9e9b13c0ba4fb87d4f21190ba6">FractalType_Ridged</a>:</div>
+<div class="line"><span class="lineno">  335</span>            <span class="keywordflow">return</span> GenFractalRidged(x, y, z);</div>
+<div class="line"><span class="lineno">  336</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7a35dd313649e5bcc962d1ed7cd2914a15">FractalType_PingPong</a>:</div>
+<div class="line"><span class="lineno">  337</span>            <span class="keywordflow">return</span> GenFractalPingPong(x, y, z);</div>
+<div class="line"><span class="lineno">  338</span>        }</div>
+<div class="line"><span class="lineno">  339</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3bf01ec5bf90b724d43dfffd77280a1a" name="a3bf01ec5bf90b724d43dfffd77280a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bf01ec5bf90b724d43dfffd77280a1a">&#9670;&#160;</a></span>SetCellularDistanceFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetCellularDistanceFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_fast_noise_lite.html#a398050da8e86742d6f0e8fb4cdf9851c">CellularDistanceFunction</a>&#160;</td>
+          <td class="paramname"><em>cellularDistanceFunction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets distance function used in cellular noise calculations. </p>
+<p>Default: Distance </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00247">247</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  247</span>{ mCellularDistanceFunction = cellularDistanceFunction; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae49c55743d5782ad3c752ccf2b08ef00" name="ae49c55743d5782ad3c752ccf2b08ef00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49c55743d5782ad3c752ccf2b08ef00">&#9670;&#160;</a></span>SetCellularJitter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetCellularJitter </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cellularJitter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the maximum distance a cellular point can move from it's grid position. </p>
+<p>Default: 1.0 Note: Setting this higher than 1 will cause artifacts </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00264">264</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  264</span>{ mCellularJitterModifier = cellularJitter; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a376f2fc231bbdc600fd70f423e84da8f" name="a376f2fc231bbdc600fd70f423e84da8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376f2fc231bbdc600fd70f423e84da8f">&#9670;&#160;</a></span>SetCellularReturnType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetCellularReturnType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_fast_noise_lite.html#a5b30b7fbc75d02e033e9776dbea52e82">CellularReturnType</a>&#160;</td>
+          <td class="paramname"><em>cellularReturnType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets return type from cellular noise calculations. </p>
+<p>Default: EuclideanSq </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00255">255</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  255</span>{ mCellularReturnType = cellularReturnType; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5d5677498f978e13915b241901885cc9" name="a5d5677498f978e13915b241901885cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5677498f978e13915b241901885cc9">&#9670;&#160;</a></span>SetDomainWarpAmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetDomainWarpAmp </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>domainWarpAmp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the maximum warp distance from original position when using DomainWarp(...) </p>
+<p>Default: 1.0 </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00286">286</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  286</span>{ mDomainWarpAmp = domainWarpAmp; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a22e449e628ce14581ca277cb8915f1ef" name="a22e449e628ce14581ca277cb8915f1ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e449e628ce14581ca277cb8915f1ef">&#9670;&#160;</a></span>SetDomainWarpType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetDomainWarpType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_fast_noise_lite.html#a6e3acdac4a6f273e70240731c9a4a913">DomainWarpType</a>&#160;</td>
+          <td class="paramname"><em>domainWarpType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the warp algorithm when using DomainWarp(...) </p>
+<p>Default: OpenSimplex2 </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00273">273</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  274</span>    {</div>
+<div class="line"><span class="lineno">  275</span>        mDomainWarpType = domainWarpType;</div>
+<div class="line"><span class="lineno">  276</span>        UpdateWarpTransformType3D();</div>
+<div class="line"><span class="lineno">  277</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa1b68b34d506dd498533d7849a41fa78" name="aa1b68b34d506dd498533d7849a41fa78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b68b34d506dd498533d7849a41fa78">&#9670;&#160;</a></span>SetFractalGain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetFractalGain </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets octave gain for all fractal noise types. </p>
+<p>Default: 0.5 </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00217">217</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  218</span>    {</div>
+<div class="line"><span class="lineno">  219</span>        mGain = gain;</div>
+<div class="line"><span class="lineno">  220</span>        CalculateFractalBounding();</div>
+<div class="line"><span class="lineno">  221</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a29f35540c2eba7aa4378a73481bce283" name="a29f35540c2eba7aa4378a73481bce283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f35540c2eba7aa4378a73481bce283">&#9670;&#160;</a></span>SetFractalLacunarity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetFractalLacunarity </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lacunarity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets octave lacunarity for all fractal noise types. </p>
+<p>Default: 2.0 </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00209">209</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  209</span>{ mLacunarity = lacunarity; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a220275b5be1d2137f0a2f232a07e0792" name="a220275b5be1d2137f0a2f232a07e0792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220275b5be1d2137f0a2f232a07e0792">&#9670;&#160;</a></span>SetFractalOctaves()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetFractalOctaves </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>octaves</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets octave count for all fractal noise types. </p>
+<p>Default: 3 </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00197">197</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  198</span>    {</div>
+<div class="line"><span class="lineno">  199</span>        mOctaves = octaves;</div>
+<div class="line"><span class="lineno">  200</span>        CalculateFractalBounding();</div>
+<div class="line"><span class="lineno">  201</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac09b58924278defc443addb34cf80f59" name="ac09b58924278defc443addb34cf80f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09b58924278defc443addb34cf80f59">&#9670;&#160;</a></span>SetFractalPingPongStrength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetFractalPingPongStrength </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pingPongStrength</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets strength of the fractal ping pong effect. </p>
+<p>Default: 2.0 </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00238">238</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  238</span>{ mPingPongStrength = pingPongStrength; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaaff254bccb75fe64d7eaa75fe3930d6" name="aaaff254bccb75fe64d7eaa75fe3930d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaff254bccb75fe64d7eaa75fe3930d6">&#9670;&#160;</a></span>SetFractalType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetFractalType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_fast_noise_lite.html#a691456d5ac06f0b2a828b0e2d3e7f7f7">FractalType</a>&#160;</td>
+          <td class="paramname"><em>fractalType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets method for combining octaves in all fractal noise types. </p>
+<p>Default: None Note: FractalType_DomainWarp... only affects DomainWarp(...) </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00189">189</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  189</span>{ mFractalType = fractalType; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aca5f269464ab16934796ded272a12ffc" name="aca5f269464ab16934796ded272a12ffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5f269464ab16934796ded272a12ffc">&#9670;&#160;</a></span>SetFractalWeightedStrength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetFractalWeightedStrength </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>weightedStrength</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets octave weighting for all none DomainWarp fratal types. </p>
+<p>Default: 0.0 Note: Keep between 0...1 to maintain -1...1 output bounding </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00230">230</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  230</span>{ mWeightedStrength = weightedStrength; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6e268d7e687b658f83dee38ea7dc1afc" name="a6e268d7e687b658f83dee38ea7dc1afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e268d7e687b658f83dee38ea7dc1afc">&#9670;&#160;</a></span>SetFrequency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetFrequency </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>frequency</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets frequency for all noise types. </p>
+<p>Default: 0.01 </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00154">154</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  154</span>{ mFrequency = frequency; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af345b52cbe9b499eb6a0c1d9b72a738f" name="af345b52cbe9b499eb6a0c1d9b72a738f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af345b52cbe9b499eb6a0c1d9b72a738f">&#9670;&#160;</a></span>SetNoiseType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetNoiseType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_fast_noise_lite.html#a92524ce8eee37bd74571a624244d3b0a">NoiseType</a>&#160;</td>
+          <td class="paramname"><em>noiseType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets noise algorithm used for GetNoise(...) </p>
+<p>Default: OpenSimplex2 </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00162">162</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>    {</div>
+<div class="line"><span class="lineno">  164</span>        mNoiseType = noiseType;</div>
+<div class="line"><span class="lineno">  165</span>        UpdateTransformType3D();</div>
+<div class="line"><span class="lineno">  166</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a704dfe555b6ee0456707bb31e0aa8c0c" name="a704dfe555b6ee0456707bb31e0aa8c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a704dfe555b6ee0456707bb31e0aa8c0c">&#9670;&#160;</a></span>SetRotationType3D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetRotationType3D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_fast_noise_lite.html#adc4818a7309d29312a3732261beea8af">RotationType3D</a>&#160;</td>
+          <td class="paramname"><em>rotationType3D</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets domain rotation type for 3D Noise and 3D DomainWarp. Can aid in reducing directional artifacts when sampling a 2D plane in 3D. </p>
+<p>Default: None </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00175">175</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  176</span>    {</div>
+<div class="line"><span class="lineno">  177</span>        mRotationType3D = rotationType3D;</div>
+<div class="line"><span class="lineno">  178</span>        UpdateTransformType3D();</div>
+<div class="line"><span class="lineno">  179</span>        UpdateWarpTransformType3D();</div>
+<div class="line"><span class="lineno">  180</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4d2f591a9fb81fa37ec4ae45694ae90e" name="a4d2f591a9fb81fa37ec4ae45694ae90e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2f591a9fb81fa37ec4ae45694ae90e">&#9670;&#160;</a></span>SetSeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FastNoiseLite::SetSeed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>seed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets seed used for all noise types. </p>
+<p>Default: 1337 </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_fast_noise_lite_8h_source.html#l00146">146</a> pliku <a class="el" href="_fast_noise_lite_8h_source.html">FastNoiseLite.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  146</span>{ mSeed = seed; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

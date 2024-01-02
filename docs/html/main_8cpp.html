@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Symulowane Piksele: Dokumentacja pliku Piksele_Symulowane/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Symulowane Piksele<span id="projectnumber">&#160;0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4f94aae095b9e47dba934ab906db1a0a.html">Piksele_Symulowane</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja pliku main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="app_8hpp_source.html">files/app.hpp</a>&quot;</code><br />
+</div>
+<p><a href="main_8cpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blok try {...} catch {..} służy do obsługi i przechwytywania wyjątków, co pozwala programowi kontynuować działanie pomimo wystąpienia błędów. Jeżeli natrafi na błąd, będzie on wyświetlany.  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blok try {...} catch {..} służy do obsługi i przechwytywania wyjątków, co pozwala programowi kontynuować działanie pomimo wystąpienia błędów. Jeżeli natrafi na błąd, będzie on wyświetlany. </p>
+<p>Chowanie CMD podczas uruchamiania aplikacji</p>
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00009">9</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>           {</div>
+<div class="line"><span class="lineno">   10</span>        </div>
+<div class="line"><span class="lineno">   12</span><span class="preprocessor">#ifdef NDEBUG</span></div>
+<div class="line"><span class="lineno">   13</span>    HWND hwnd = GetConsoleWindow();</div>
+<div class="line"><span class="lineno">   14</span>    ShowWindow(hwnd, SW_HIDE);</div>
+<div class="line"><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   16</span> </div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   18</span>        <a class="code hl_class" href="class_app.html">App</a> app;</div>
+<div class="line"><span class="lineno">   19</span>        app.<a class="code hl_function" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1">run</a>();</div>
+<div class="line"><span class="lineno">   20</span>    }</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">catch</span> (std::exception &amp;exception) {</div>
+<div class="line"><span class="lineno">   22</span>        std::cerr &lt;&lt; exception.what() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   23</span>    }</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   25</span>}</div>
+<div class="ttc" id="aclass_app_html"><div class="ttname"><a href="class_app.html">App</a></div><div class="ttdoc">Klasa App.</div><div class="ttdef"><b>Definition</b> <a href="app_8hpp_source.html#l00005">app.hpp:5</a></div></div>
+<div class="ttc" id="aclass_app_html_ae09dc71078b64c56c673b1ad1d25b5d1"><div class="ttname"><a href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1">App::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Główna funkcja wykonująca podrzędne funckje.</div><div class="ttdef"><b>Definition</b> <a href="app_8cpp_source.html#l00025">app.cpp:25</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Symulowane Piksele: Plik 藕r贸d艂owy Piksele_Symulowane/files/environment.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Symulowane Piksele<span id="projectnumber">&#160;0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;g艂贸wna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plik贸w</span></a></li>
+      <li><a href="globals.html"><span>Sk艂adowe&#160;plik贸w</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4f94aae095b9e47dba934ab906db1a0a.html">Piksele_Symulowane</a></li><li class="navelem"><a class="el" href="dir_8e4668ee50683bcbda5d02ac01962db6.html">files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">environment.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="environment_8cpp.html">Id藕 do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="stuff_8hpp.html">stuff.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>sf::RectangleShape <a class="code hl_variable" href="class_env.html#a7e0df3ecec4ce651ad46426243c7c3af">Env::sand</a> = sf::RectangleShape(sf::Vector2f(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>)));</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>sf::RectangleShape <a class="code hl_variable" href="class_env.html#af272093f130d633bb4da8bf8506429df">Env::stone</a> = sf::RectangleShape(sf::Vector2f(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>)));</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>sf::RectangleShape <a class="code hl_variable" href="class_env.html#a394e04a5ce1d78a8b6d3062dd2ee42d6">Env::water</a> = sf::RectangleShape(sf::Vector2f(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>)));</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>sf::RectangleShape <a class="code hl_variable" href="class_env.html#a5ae14ffb1c752900186b54db89d540df">Env::particle</a> = sf::RectangleShape(sf::Vector2f(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a> * 2)));</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>sf::RectangleShape <a class="code hl_variable" href="class_env.html#ad68b9858b4f69e1fffa910005796bfc0">Env::acid</a> = sf::RectangleShape(sf::Vector2f(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>)));</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>sf::RectangleShape <a class="code hl_variable" href="class_env.html#ac35bd7f34c8051b57ea81fcf72c25db8">Env::plant</a> = sf::RectangleShape(sf::Vector2f(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a> * 2)));</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>sf::RectangleShape <a class="code hl_variable" href="class_env.html#a42a218ad0b51ad77ff79e9c7d5e8fada">Env::erase</a> = sf::RectangleShape(sf::Vector2f(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>), <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a>)));</div>
+<div class="ttc" id="aclass_env_html_a394e04a5ce1d78a8b6d3062dd2ee42d6"><div class="ttname"><a href="class_env.html#a394e04a5ce1d78a8b6d3062dd2ee42d6">Env::water</a></div><div class="ttdeci">static sf::RectangleShape water</div><div class="ttdef"><b>Definition</b> <a href="environment_8hpp_source.html#l00010">environment.hpp:10</a></div></div>
+<div class="ttc" id="aclass_env_html_a42a218ad0b51ad77ff79e9c7d5e8fada"><div class="ttname"><a href="class_env.html#a42a218ad0b51ad77ff79e9c7d5e8fada">Env::erase</a></div><div class="ttdeci">static sf::RectangleShape erase</div><div class="ttdef"><b>Definition</b> <a href="environment_8hpp_source.html#l00014">environment.hpp:14</a></div></div>
+<div class="ttc" id="aclass_env_html_a5ae14ffb1c752900186b54db89d540df"><div class="ttname"><a href="class_env.html#a5ae14ffb1c752900186b54db89d540df">Env::particle</a></div><div class="ttdeci">static sf::RectangleShape particle</div><div class="ttdef"><b>Definition</b> <a href="environment_8hpp_source.html#l00011">environment.hpp:11</a></div></div>
+<div class="ttc" id="aclass_env_html_a7e0df3ecec4ce651ad46426243c7c3af"><div class="ttname"><a href="class_env.html#a7e0df3ecec4ce651ad46426243c7c3af">Env::sand</a></div><div class="ttdeci">static sf::RectangleShape sand</div><div class="ttdoc">Klasa 'Env', kt贸ra przetrzymuje statyczne zmienne okre艣laj膮ce typ obiektu piksela.</div><div class="ttdef"><b>Definition</b> <a href="environment_8hpp_source.html#l00008">environment.hpp:8</a></div></div>
+<div class="ttc" id="aclass_env_html_ac35bd7f34c8051b57ea81fcf72c25db8"><div class="ttname"><a href="class_env.html#ac35bd7f34c8051b57ea81fcf72c25db8">Env::plant</a></div><div class="ttdeci">static sf::RectangleShape plant</div><div class="ttdef"><b>Definition</b> <a href="environment_8hpp_source.html#l00013">environment.hpp:13</a></div></div>
+<div class="ttc" id="aclass_env_html_ad68b9858b4f69e1fffa910005796bfc0"><div class="ttname"><a href="class_env.html#ad68b9858b4f69e1fffa910005796bfc0">Env::acid</a></div><div class="ttdeci">static sf::RectangleShape acid</div><div class="ttdef"><b>Definition</b> <a href="environment_8hpp_source.html#l00012">environment.hpp:12</a></div></div>
+<div class="ttc" id="aclass_env_html_af272093f130d633bb4da8bf8506429df"><div class="ttname"><a href="class_env.html#af272093f130d633bb4da8bf8506429df">Env::stone</a></div><div class="ttdeci">static sf::RectangleShape stone</div><div class="ttdef"><b>Definition</b> <a href="environment_8hpp_source.html#l00009">environment.hpp:9</a></div></div>
+<div class="ttc" id="aclass_world_html_abfbca81747c91a96c698a38b1797eca3"><div class="ttname"><a href="class_world.html#abfbca81747c91a96c698a38b1797eca3">World::pixelSize</a></div><div class="ttdeci">static int pixelSize</div><div class="ttdoc">Wielko滄 piksela.</div><div class="ttdef"><b>Definition</b> <a href="world_8hpp_source.html#l00009">world.hpp:9</a></div></div>
+<div class="ttc" id="astuff_8hpp_html"><div class="ttname"><a href="stuff_8hpp.html">stuff.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

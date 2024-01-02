@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Symulowane Piksele: Plik źródłowy Piksele_Symulowane/files/menu.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Symulowane Piksele<span id="projectnumber">&#160;0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4f94aae095b9e47dba934ab906db1a0a.html">Piksele_Symulowane</a></li><li class="navelem"><a class="el" href="dir_8e4668ee50683bcbda5d02ac01962db6.html">files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">menu.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="menu_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="menu_8hpp.html">menu.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="menu__data_8hpp.html">menu_data.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="icon__data__2_8hpp.html">icon_data_2.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_menu.html#ad466dd83355124a6ed958430450bfe94">   10</a></span><a class="code hl_function" href="class_menu.html#ad466dd83355124a6ed958430450bfe94">Menu::Menu</a>(){</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  window = <span class="keyword">new</span> sf::RenderWindow();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  windowClose = <span class="keyword">new</span> sf::RectangleShape();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  image = <span class="keyword">new</span> sf::Texture();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  icon = <span class="keyword">new</span> sf::Image();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  background = <span class="keyword">new</span> sf::Sprite();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_function" href="class_menu.html#a89f384e239a98194df1d0fd5995c613f">SetValues</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_menu.html#a831387f51358cfb88cd018e1777bc980">   21</a></span><a class="code hl_function" href="class_menu.html#a831387f51358cfb88cd018e1777bc980">Menu::~Menu</a>(){</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">delete</span> window;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">delete</span> windowClose;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">delete</span> image;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">delete</span> icon;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">delete</span> background;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_menu.html#a89f384e239a98194df1d0fd5995c613f">   29</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a89f384e239a98194df1d0fd5995c613f">Menu::SetValues</a>() {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  window-&gt;create(sf::VideoMode(1000, 1000), <span class="stringliteral">&quot;Symulowane Piksele&quot;</span>, sf::Style::Titlebar | sf::Style::Close);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordflow">if</span> (image-&gt;loadFromMemory(&amp;<a class="code hl_variable" href="menu__data_8hpp.html#a2ddfad78d29cf2244f60c36ce9035e9a">menu_png</a>, <a class="code hl_variable" href="menu__data_8hpp.html#a62ec99b1fab73f6aad01a31e445125c0">menu_png_len</a>)) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      background-&gt;setTexture(*image);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Tlo okna nie zostalo znalezione!&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordflow">if</span> (icon-&gt;loadFromMemory(&amp;<a class="code hl_variable" href="icon__data__2_8hpp.html#ab6e25bf8d56e0c31fdebcf88e775d615">icon_bmp_2</a>, <a class="code hl_variable" href="icon__data__2_8hpp.html#a152abb5e146da5ae42251e4f2cfb9f76">icon_bmp_2_len</a>)) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      window-&gt;setIcon(icon-&gt;getSize().x, icon-&gt;getSize().y, icon-&gt;getPixelsPtr());</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Ikona okna nie zostala znaleziona!&quot;</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  posMouse = {0,0};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  mouseCoord = {0,0};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  windowClose-&gt;setSize(sf::Vector2f(50, 50));</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  windowClose-&gt;setPosition(900, 50);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_menu.html#a3fa9402ebefea344bd950d283d701514">   58</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a3fa9402ebefea344bd950d283d701514">Menu::Events</a>() {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  sf::Event event;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">while</span> (window-&gt;pollEvent(event)){</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">if</span> (event.type == sf::Event::Closed){</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      window-&gt;close();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    posMouse = sf::Mouse::getPosition(*window);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    mouseCoord = window-&gt;mapPixelToCoords(posMouse);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">if</span> (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="keywordflow">if</span> (windowClose-&gt;getGlobalBounds().contains(mouseCoord)) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>         window-&gt;close();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == sf::Event::KeyPressed &amp;&amp; event.key.code == sf::Keyboard::R) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        window-&gt;close();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6">   82</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6">Menu::draw</a>() {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  window-&gt;clear();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  window-&gt;draw(*background);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  window-&gt;display();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_menu.html#a35656cd130e24d69383a5c9d0a73a38c">   89</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a35656cd130e24d69383a5c9d0a73a38c">Menu::run</a>(){</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordflow">while</span> (window-&gt;isOpen()) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_function" href="class_menu.html#a3fa9402ebefea344bd950d283d701514">Events</a>();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_function" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6">draw</a>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
+<div class="ttc" id="aclass_menu_html_a2cd7ab9901a8f42a3ae977d0774398a6"><div class="ttname"><a href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6">Menu::draw</a></div><div class="ttdeci">void draw()</div><div class="ttdoc">Rysowanie tla oraz wyswietlanie.</div><div class="ttdef"><b>Definition</b> <a href="menu_8cpp_source.html#l00082">menu.cpp:82</a></div></div>
+<div class="ttc" id="aclass_menu_html_a35656cd130e24d69383a5c9d0a73a38c"><div class="ttname"><a href="class_menu.html#a35656cd130e24d69383a5c9d0a73a38c">Menu::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Uruchamianie wszystkiego.</div><div class="ttdef"><b>Definition</b> <a href="menu_8cpp_source.html#l00089">menu.cpp:89</a></div></div>
+<div class="ttc" id="aclass_menu_html_a3fa9402ebefea344bd950d283d701514"><div class="ttname"><a href="class_menu.html#a3fa9402ebefea344bd950d283d701514">Menu::Events</a></div><div class="ttdeci">void Events()</div><div class="ttdoc">Uwzglednianie eventow.</div><div class="ttdef"><b>Definition</b> <a href="menu_8cpp_source.html#l00058">menu.cpp:58</a></div></div>
+<div class="ttc" id="aclass_menu_html_a831387f51358cfb88cd018e1777bc980"><div class="ttname"><a href="class_menu.html#a831387f51358cfb88cd018e1777bc980">Menu::~Menu</a></div><div class="ttdeci">~Menu()</div><div class="ttdoc">Destruktor 'Menu'.</div><div class="ttdef"><b>Definition</b> <a href="menu_8cpp_source.html#l00021">menu.cpp:21</a></div></div>
+<div class="ttc" id="aclass_menu_html_a89f384e239a98194df1d0fd5995c613f"><div class="ttname"><a href="class_menu.html#a89f384e239a98194df1d0fd5995c613f">Menu::SetValues</a></div><div class="ttdeci">void SetValues()</div><div class="ttdef"><b>Definition</b> <a href="menu_8cpp_source.html#l00029">menu.cpp:29</a></div></div>
+<div class="ttc" id="aclass_menu_html_ad466dd83355124a6ed958430450bfe94"><div class="ttname"><a href="class_menu.html#ad466dd83355124a6ed958430450bfe94">Menu::Menu</a></div><div class="ttdeci">Menu()</div><div class="ttdoc">Konstruktor 'Menu'.</div><div class="ttdef"><b>Definition</b> <a href="menu_8cpp_source.html#l00010">menu.cpp:10</a></div></div>
+<div class="ttc" id="aicon__data__2_8hpp_html"><div class="ttname"><a href="icon__data__2_8hpp.html">icon_data_2.hpp</a></div></div>
+<div class="ttc" id="aicon__data__2_8hpp_html_a152abb5e146da5ae42251e4f2cfb9f76"><div class="ttname"><a href="icon__data__2_8hpp.html#a152abb5e146da5ae42251e4f2cfb9f76">icon_bmp_2_len</a></div><div class="ttdeci">unsigned int icon_bmp_2_len</div><div class="ttdef"><b>Definition</b> <a href="icon__data__2_8hpp_source.html#l01041">icon_data_2.hpp:1041</a></div></div>
+<div class="ttc" id="aicon__data__2_8hpp_html_ab6e25bf8d56e0c31fdebcf88e775d615"><div class="ttname"><a href="icon__data__2_8hpp.html#ab6e25bf8d56e0c31fdebcf88e775d615">icon_bmp_2</a></div><div class="ttdeci">unsigned char icon_bmp_2[]</div><div class="ttdef"><b>Definition</b> <a href="icon__data__2_8hpp_source.html#l00003">icon_data_2.hpp:3</a></div></div>
+<div class="ttc" id="amenu_8hpp_html"><div class="ttname"><a href="menu_8hpp.html">menu.hpp</a></div></div>
+<div class="ttc" id="amenu__data_8hpp_html"><div class="ttname"><a href="menu__data_8hpp.html">menu_data.hpp</a></div></div>
+<div class="ttc" id="amenu__data_8hpp_html_a2ddfad78d29cf2244f60c36ce9035e9a"><div class="ttname"><a href="menu__data_8hpp.html#a2ddfad78d29cf2244f60c36ce9035e9a">menu_png</a></div><div class="ttdeci">const unsigned char menu_png[]</div><div class="ttdef"><b>Definition</b> <a href="menu__data_8hpp_source.html#l00003">menu_data.hpp:3</a></div></div>
+<div class="ttc" id="amenu__data_8hpp_html_a62ec99b1fab73f6aad01a31e445125c0"><div class="ttname"><a href="menu__data_8hpp.html#a62ec99b1fab73f6aad01a31e445125c0">menu_png_len</a></div><div class="ttdeci">unsigned int menu_png_len</div><div class="ttdef"><b>Definition</b> <a href="menu__data_8hpp_source.html#l03353">menu_data.hpp:3353</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

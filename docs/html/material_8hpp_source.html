@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Symulowane Piksele: Plik źródłowy Piksele_Symulowane/files/material.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Symulowane Piksele<span id="projectnumber">&#160;0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4f94aae095b9e47dba934ab906db1a0a.html">Piksele_Symulowane</a></li><li class="navelem"><a class="el" href="dir_8e4668ee50683bcbda5d02ac01962db6.html">files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">material.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="material_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="stuff_8hpp.html">stuff.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_material.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="class_material.html">Material</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_class" href="class_material.html">Material</a>(std::string name, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_material.html#a9f89687e73ace997832b5e120fc61884">Gravity</a>(std::vector&lt;std::vector&lt;int&gt;&gt; &amp;grid, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j); </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_material.html#af1a9761f525254d5d8d203c9bd54bc1e">UpdateMaterial</a>(std::vector&lt;std::vector&lt;int&gt;&gt; &amp;grid, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j); </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_material.html#ac0b990143cffedd14ab8715dbc9f273f">UpdateMaterialv2</a>(std::vector&lt;std::vector&lt;int&gt;&gt; &amp;grid, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j); </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_material.html#a001f5d4a00bd6a3d4cd4bafef8128041">UpdateMaterialv3</a>(std::vector&lt;std::vector&lt;int&gt;&gt; &amp;grid, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j); </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_material.html#ae1452f13a352e9b0c25cad608dea2ddb">UpdateMaterialv4</a>(std::vector&lt;std::vector&lt;int&gt;&gt; &amp;grid, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j); </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_material.html#a1be724d9fd6c7d613ea9f3f71d8ba845">UpdateMaterialv5</a>(std::vector&lt;std::vector&lt;int&gt;&gt; &amp;grid, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j); </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> <a class="code hl_variable" href="app_8cpp.html#ab12dc71a0778a984890ef14b6d6eeddd">Erase</a>(std::vector&lt;std::vector&lt;int&gt;&gt; &amp;grid, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j); </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::string m_name; </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">int</span> m_id; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+<div class="ttc" id="aapp_8cpp_html_ab12dc71a0778a984890ef14b6d6eeddd"><div class="ttname"><a href="app_8cpp.html#ab12dc71a0778a984890ef14b6d6eeddd">Erase</a></div><div class="ttdeci">Material Erase(&quot;Erase&quot;, 7)</div></div>
+<div class="ttc" id="aclass_material_html"><div class="ttname"><a href="class_material.html">Material</a></div><div class="ttdef"><b>Definition</b> <a href="material_8hpp_source.html#l00004">material.hpp:4</a></div></div>
+<div class="ttc" id="aclass_material_html_a001f5d4a00bd6a3d4cd4bafef8128041"><div class="ttname"><a href="class_material.html#a001f5d4a00bd6a3d4cd4bafef8128041">Material::UpdateMaterialv3</a></div><div class="ttdeci">void UpdateMaterialv3(std::vector&lt; std::vector&lt; int &gt; &gt; &amp;grid, int i, int j)</div><div class="ttdoc">Metoda aktualizacji materialu wody na siatce.</div><div class="ttdef"><b>Definition</b> <a href="material_8cpp_source.html#l00091">material.cpp:91</a></div></div>
+<div class="ttc" id="aclass_material_html_a1be724d9fd6c7d613ea9f3f71d8ba845"><div class="ttname"><a href="class_material.html#a1be724d9fd6c7d613ea9f3f71d8ba845">Material::UpdateMaterialv5</a></div><div class="ttdeci">void UpdateMaterialv5(std::vector&lt; std::vector&lt; int &gt; &gt; &amp;grid, int i, int j)</div><div class="ttdoc">Metoda aktualizacji materialu kwasu na siatce.</div><div class="ttdef"><b>Definition</b> <a href="material_8cpp_source.html#l00230">material.cpp:230</a></div></div>
+<div class="ttc" id="aclass_material_html_a9f89687e73ace997832b5e120fc61884"><div class="ttname"><a href="class_material.html#a9f89687e73ace997832b5e120fc61884">Material::Gravity</a></div><div class="ttdeci">void Gravity(std::vector&lt; std::vector&lt; int &gt; &gt; &amp;grid, int i, int j)</div><div class="ttdoc">Funkcja, dzięki której piasek z wodą odpowiednio współgra - istnieje pewna grawitacja.</div><div class="ttdef"><b>Definition</b> <a href="material_8cpp_source.html#l00011">material.cpp:11</a></div></div>
+<div class="ttc" id="aclass_material_html_ac0b990143cffedd14ab8715dbc9f273f"><div class="ttname"><a href="class_material.html#ac0b990143cffedd14ab8715dbc9f273f">Material::UpdateMaterialv2</a></div><div class="ttdeci">void UpdateMaterialv2(std::vector&lt; std::vector&lt; int &gt; &gt; &amp;grid, int i, int j)</div><div class="ttdoc">Metoda aktualizacji materiału.</div><div class="ttdef"><b>Definition</b> <a href="material_8cpp_source.html#l00055">material.cpp:55</a></div></div>
+<div class="ttc" id="aclass_material_html_ae1452f13a352e9b0c25cad608dea2ddb"><div class="ttname"><a href="class_material.html#ae1452f13a352e9b0c25cad608dea2ddb">Material::UpdateMaterialv4</a></div><div class="ttdeci">void UpdateMaterialv4(std::vector&lt; std::vector&lt; int &gt; &gt; &amp;grid, int i, int j)</div><div class="ttdoc">Metoda aktualizacji materialu cząstek na siatce.</div><div class="ttdef"><b>Definition</b> <a href="material_8cpp_source.html#l00191">material.cpp:191</a></div></div>
+<div class="ttc" id="aclass_material_html_af1a9761f525254d5d8d203c9bd54bc1e"><div class="ttname"><a href="class_material.html#af1a9761f525254d5d8d203c9bd54bc1e">Material::UpdateMaterial</a></div><div class="ttdeci">void UpdateMaterial(std::vector&lt; std::vector&lt; int &gt; &gt; &amp;grid, int i, int j)</div><div class="ttdoc">Metoda do zastosowania grawitacji.</div><div class="ttdef"><b>Definition</b> <a href="material_8cpp_source.html#l00022">material.cpp:22</a></div></div>
+<div class="ttc" id="astuff_8hpp_html"><div class="ttname"><a href="stuff_8hpp.html">stuff.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
