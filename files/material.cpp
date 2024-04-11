@@ -10,7 +10,14 @@ Material::Material(std::string name, int id) : m_name(name), m_id(id) {}
 /// Funkcja, dzięki której piasek z wodą odpowiednio współgra - istnieje pewna grawitacja
 void Material::Gravity(std::vector<std::vector<int>> &grid, int i, int j) {
     /// Zwolnienie opadania piasku na dno, losowe rozprzestrzenianie się
-    int r = rand() % 2;
+
+    /// Kod używa generatora liczb losowych Mersenne Twister (std::mt19937), który jest zainicjowany 
+    /// losową wartością z urządzenia generującego losowe liczby (std::random_device). 
+    /// Następnie wykorzystuje rozkład równomierny, aby losowo wybrać liczbę 0 lub 1 i przypisuje ją do zmiennej direction.
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<int> distribution(0, 1); /// 0 dla lewej, 1 dla prawej strony
+    int r = distribution(gen);
     /// Jeżeli pozycja znajduje się wewnątrz okna programu i na dole jest woda - to przesuń wodę do góry a piasek na dno
     if (r == 0 && i + 1 < World::worldHeight && j + 1 < World::worldWidth && grid[i + 1][j] == 3) {
         grid[i][j] = 3;
@@ -20,9 +27,6 @@ void Material::Gravity(std::vector<std::vector<int>> &grid, int i, int j) {
 
 /// Symulacja materiału piasku
 void Material::UpdateMaterial(std::vector<std::vector<int>> &grid, int i, int j) {
-    /// Kod używa generatora liczb losowych Mersenne Twister (std::mt19937), który jest zainicjowany 
-    /// losową wartością z urządzenia generującego losowe liczby (std::random_device). 
-    /// Następnie wykorzystuje rozkład równomierny, aby losowo wybrać liczbę 0 lub 1 i przypisuje ją do zmiennej direction.
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<int> distribution(0, 1); /// 0 dla lewej, 1 dla prawej strony
@@ -53,10 +57,6 @@ void Material::UpdateMaterial(std::vector<std::vector<int>> &grid, int i, int j)
 
 /// Symulacja materiału wody
 void Material::UpdateMaterialv2(std::vector<std::vector<int>> &grid, int i, int j) {
-    /// Ten kod używa generatora liczb losowych Mersenne Twister (std::mt19937), zainicjowanego losową wartością 
-    /// pochodzącą z urządzenia generującego losowe liczby (std::random_device). Następnie wykorzystuje rozkład 
-    /// równomierny, aby losowo wybrać liczbę -1, 0 lub 1, co może reprezentować kierunek ruchu (lewo, brak ruchu, prawo)
-    /// i przypisuje wynik do zmiennej direction.
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<int> distribution(-1, 1); /// -1 dla lewej, 0 dla braku ruchu, 1 dla prawej strony
@@ -137,7 +137,7 @@ void Material::UpdateMaterialv3(std::vector<std::vector<int>>& grid, int i, int 
         } else if (grid[newI][newJ] == 2) {  // Kolizja z kamieniem
 
         /// Losowo wybierz kierunek: 0 to pionowo, 1 to poziomo
-        int newDir = rand() % 2;
+        int newDir = rand() % 4;
     
         if (newDir == 0) {
             /// Próba przesunięcia się pionowo
@@ -189,10 +189,6 @@ void Material::UpdateMaterialv3(std::vector<std::vector<int>>& grid, int i, int 
 
 /// Symulacja kwasu
 void Material::UpdateMaterialv4(std::vector<std::vector<int>> &grid, int i, int j) {
-    /// Ten kod używa generatora liczb losowych Mersenne Twister (std::mt19937), zainicjowanego losową wartością 
-    /// pochodzącą z urządzenia generującego losowe liczby (std::random_device). Następnie wykorzystuje rozkład 
-    /// równomierny, aby losowo wybrać liczbę -1, 0 lub 1, co może reprezentować kierunek ruchu (lewo, brak ruchu, prawo)
-    /// i przypisuje wynik do zmiennej direction.
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<int> distribution(-1, 1); /// -1 dla lewej, 0 dla braku ruchu, 1 dla prawej strony

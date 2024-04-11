@@ -27,9 +27,9 @@ Menu::~Menu(){
 }
 
 void Menu::SetValues() {
-  window->create(sf::VideoMode(1000, 1000), "Symulowane Piksele", sf::Style::Titlebar | sf::Style::Close);
+  window->create(sf::VideoMode(1000, 1000), "Piksele Symulowane", sf::Style::Titlebar | sf::Style::Close);
 
-  /// Tlo okna menu - bezpośrednie ładowanie z bajtów danych
+  /// Tło okna menu - bezpośrednie ładowanie z bajtów danych
   if (image->loadFromMemory(&menu_png, menu_png_len)) {
       background->setTexture(*image);
   } else {
@@ -48,13 +48,13 @@ void Menu::SetValues() {
   posMouse = {0,0};
   mouseCoord = {0,0};
 
-  /// 'X' - wylaczenie menu
+  /// 'X' - wyłączenie menu
   windowClose->setSize(sf::Vector2f(50, 50));
   windowClose->setPosition(900, 50);
 }
 
 
-/// Uwzglednianie eventow
+/// Uwzględnianie eventów
 void Menu::Events() {
   sf::Event event;
   while (window->pollEvent(event)){
@@ -70,7 +70,7 @@ void Menu::Events() {
       if (windowClose->getGlobalBounds().contains(mouseCoord)) {
          window->close();
       }
-    } else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::R) {
+    } else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Enter) {
         window->close();
     }
 
@@ -78,14 +78,14 @@ void Menu::Events() {
   }
 }
 
-/// Rysowanie tla oraz wyswietlanie
+/// Rysowanie tla oraz wyświetlanie
 void Menu::draw() {
   window->clear();
   window->draw(*background);
   window->display();
 }
 
-/// Uruchamianie wszystkiego
+/// Uruchamianie
 void Menu::run(){
   while (window->isOpen()) {
     Events();

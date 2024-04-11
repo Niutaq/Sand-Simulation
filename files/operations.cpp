@@ -3,6 +3,7 @@
 */
 
 #include "stuff.hpp"
+#include "cmath"
 
 /// Użyte zmienne statyczne
 extern Material Sand;
@@ -278,11 +279,11 @@ void Op::Draw(std::vector<std::vector<int>>& grid, sf::RenderWindow& window) {
 
 /// Funkcja tworząca proceduralny teren (losowo)
 float Op::GenTerrain(float x, float y) {
-	FastNoiseLite noise;
-	noise.SetNoiseType(FastNoiseLite::NoiseType_OpenSimplex2S);
+    FastNoiseLite noise;
+    noise.SetNoiseType(FastNoiseLite::NoiseType_OpenSimplex2S);
 
-	float r = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-	noise.SetFrequency(5 + r  * 50);
+    float r = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
+    noise.SetFrequency(5 + r * 50);
 
-	return noise.GetNoise(x, y);
+    return noise.GetNoise(x, y);
 }

@@ -35,7 +35,7 @@ void App::run() {
     /// Obiekt klasy 'Op'
     Op op;
 	/// Okno programu
-	sf::RenderWindow window(sf::VideoMode(World::width, World::height), "Symulowane Piksele");
+	sf::RenderWindow window(sf::VideoMode(World::width, World::height), "Piksele Symulowane");
 	/// 'Tablica tablic', czyli macierz o określonej wielkości / siatka N x M pikseli | '0' oznacza pustą macierz - piksele o ID=0
 	std::vector<std::vector<int>> grid(World::worldHeight, std::vector<int>(World::worldWidth, 0));
 	
@@ -128,12 +128,12 @@ void App::run() {
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::I) {
                 if (ifChange) {
                     if (!backgroundImageFromMemory.loadFromMemory(&pyramids_png, pyramids_png_len)) {
-                        throw std::runtime_error("Inne tło nie zostało znalezione!");
+                        throw std::runtime_error("Inne tlo nie zostalo znalezione!");
                     }
                 }
                 else {
                     if (!backgroundImageFromMemory.loadFromMemory(&mountains_png, mountains_png_len)) {
-                        throw std::runtime_error("Tekstura tła ekranu nie została znaleziona!");
+                        throw std::runtime_error("Tekstura tla ekranu nie zostala znaleziona!");
                     }
                 }
 
